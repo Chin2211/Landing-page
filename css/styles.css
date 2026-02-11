@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #7b2ff7, #f107a3);
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    flex-wrap: wrap;
+}
+
+.hero img {
+    width: 280px;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+}
+
+.hero-text button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #ffdd00;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    width: 260px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-card span {
+    color: #f107a3;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-card button {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: #7b2ff7;
+    color: white;
+    cursor: pointer;
+}
+
+/* ABOUT */
+.about {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-text h2 {
+        font-size: 28px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}
